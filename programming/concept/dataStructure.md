@@ -31,9 +31,9 @@ To calculate O notation, create a table for possible notations, and mark each pr
 `i++` incrementor in for loop         -> run n times               => n
 `return sum`                          -> run only once             => 1
 
-1       n       n^2
-_       _       ___
-3       3       0
+1|n|n^2
+-------
+3|3|0
 
 The O Notaion in the end is 3n + 3 => O(n)
 
