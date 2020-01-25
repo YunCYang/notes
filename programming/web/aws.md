@@ -75,3 +75,30 @@ Install certbot for https
 Go to certbot website for detail example
 `sudo add-apt-repository ppa:certbot/certbot`
 `sudo apt-get install certbot python-certbot-nginx`
+
+[Back](../../README.md)
+
+--
+note:
+Old config that wasn't working:
+
+located at ` /etc/nginx/sites-available/yuncyang.com`
+
+```
+server {
+    if ($host = yuncyang.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80;
+        listen [::]:80;
+
+        server_name yuncyang.com;
+        return 404; # managed by Certbot
+
+
+}
+```
+
+Above config always return 404 when visits http://yuncyang.com , instead of redirecting to https version.
