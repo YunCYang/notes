@@ -11,6 +11,8 @@
 - [HTTPie](programming/backend/httpie.md)
 
 ## Concept
+### Data Structure
+- [O Notation](programming/concept/oNotation.md)
 - [Data Structure](programming/concept/dataStructure.md)
 
 ## Web
