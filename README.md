@@ -14,6 +14,7 @@
 ### Data Structure
 - [O Notation](programming/concept/oNotation.md)
 - [Data Structure](programming/concept/dataStructure.md)
+- [Data Structure II](programming/concept/dataStructure2.md)
 
 ## Web
 - [AWS](programming/web/aws.md)
