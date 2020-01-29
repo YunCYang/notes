@@ -8,6 +8,7 @@ Designing the structure for code has two aspects:
 ## Note
 32 bit vs. 64 bit: difference is in memory address.
 When comparing different data structure, we often compares the speed to perform CRUD operations.
+Whether deallocation of unneeded data is needed depends on if the language has a garbage collector that automatically does the deallocation. Manual deallocation is not required for languages like JavaScript, but necessary for languages like C / C++.
 
 ### Example CRUD Operation
 - Read
@@ -28,7 +29,7 @@ When comparing different data structure, we often compares the speed to perform 
 ### Simple Static Array Structure
 Note: not a JavaScript array, but an ordinary array.
 
-Overhead for a static array: start location and the length.
+Overhead for a static array: start location, length and data type length.
 
 For a 32 bit system, each item in an array takes up 32 bits, or 4 bytes.
 
@@ -61,6 +62,8 @@ To swap two values in an array, a temporary memory the size of the integer is al
   - Replace value at key      O(1)
   - Swap                      O(1)
 - Bulk Operations
+
+Arrays are good when there's a constant need to read the data.
 
 ### Dynamic Array Structure
 The dynamic array would have an actual array length and an effectice array length.
