@@ -50,6 +50,8 @@ Or `psql -h (server name) -d (database name) -U (user name)`
 
 To check information about connection, use the command '\conninfo'.
 
+To change user and database: `\c (new database) (new user)`, substitute database for '-' if you want to stay at the current database.
+
 ## Resource
 - [Official Documentation](https://www.postgresql.org/docs/)
 - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
