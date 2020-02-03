@@ -14,5 +14,7 @@ The runtime for heap is O(log N), meaning when doubling the size of the data, on
 ### Binary Search Tree
 For a BST, the value in the child node on the left is always <= the parent value, and the value in the right child node is always >= the parent value. The tree is prioritize for searching, and the runtime is O(log N).
 
+Check for BFS and DFS approach for searching.
+
 
 [Back](../../README.md)
