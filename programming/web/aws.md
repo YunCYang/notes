@@ -16,7 +16,6 @@ run `ssh -i ~/Desktop/ec2-ssh.pem ubuntu@18.144.81.193`
 
 ```
 The authenticity of host '18.144.81.193 (18.144.81.193)' can't be established.
-ECDSA key fingerprint is SHA256:20+Cdkhhnt8/Rr32xVd1kHrkUP5jXdG3BoCiSBhoYtk.
 ```
 Run `yes` if this is the first time running the machine.
 
