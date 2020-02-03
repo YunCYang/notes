@@ -52,6 +52,9 @@ To check information about connection, use the command '\conninfo'.
 
 To change user and database: `\c (new database) (new user)`, substitute database for '-' if you want to stay at the current database.
 
+Note that to temporarily switch to `superuser` in order to create a role with higher privilege in comander, use:
+`sudo -u postgres psql`
+
 ## Resource
 - [Official Documentation](https://www.postgresql.org/docs/)
 - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
