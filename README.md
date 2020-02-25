@@ -4,6 +4,7 @@
 
 ### JavaScript
 - [Async](programming/frontend/javascript/async.md)
+- [Object](programming/frontend/javascript/object.md)
 
 ### React
 
