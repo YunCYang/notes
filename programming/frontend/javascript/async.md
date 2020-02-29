@@ -39,5 +39,27 @@ The is the same case for `response.json()` in a promise chain when dealing with 
 
 An optional choice for asynchronous function.
 
+## Generator
+
+Define a generator using the the keyword `function*` instead of the normal `function`. When a generator is called, it will only run until it hits a *yield* expression, which pauses it and causes the yielded value to become the next value produced by the iterator.
+
+```
+function* powers(n) {
+  for (let current = n;; current *= n) {
+    yield current;
+  }
+}
+
+for (let power of powers(3)) {
+  if (power > 50) break;
+  console.log(power);
+}
+// → 3
+// → 9
+// → 27
+```
+
+Can be useful when you need to generate something like an infinite array of index.
+
 
 [Back](../../../README.md)
