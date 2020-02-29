@@ -33,3 +33,6 @@
 
 ## Web
 - [AWS](programming/web/aws.md)
+
+## Others
+- [Regex](programming/others/regex.md)
