@@ -31,6 +31,9 @@
 ## Object-Oriented Programming
 - [OOP](programming/oop/oop.md)
 
+## Machine Learning
+- [General](programming/machine_learning/general.md)
+
 ## Web
 - [AWS](programming/web/aws.md)
 - [Networks](programming/web/networks.md)
