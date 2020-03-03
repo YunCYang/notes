@@ -34,11 +34,11 @@ The "deep" in deep learning stands for the idea of learning successive layers of
 
 In deep learning, these layered representations are (almost always) learned via models called **neural networks**, structured in literal layers stacked on top of each other.
 
-![](../images/representations.png)
+![](../../images/representations.png)
 
 #### How Deep Learning Works
 
-![](../images/deepLearning.png)
+![](../../images/deepLearning.png)
 
 The specification of what a layer does to its input data is stored in the layer’s **weights**, which in essence are a bunch of numbers. In technical terms, we’d say that the transformation implemented by a layer is **parameterized** by its weights. (Weights are also sometimes called the **parameters** of a layer.) Learning means finding a set of values for the weights of all layers in a network, such that the network will correctly map example inputs to their associated targets. A deep neural network can contain tens of millions of parameters.
 
