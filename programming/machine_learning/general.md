@@ -74,4 +74,7 @@ But SVMs proved hard to scale to large datasets and didn’t provide good result
 
 Gradient boosting is used for problems where structured data is available, whereas deep learning is used for perceptual problems such as image classification. Practitioners of the former almost always use the excellent XGBoost library, which offers support for the two most popular languages of data science: Python and R. Meanwhile, most of the Kaggle entrants using deep learning use the Keras library, due to its ease of use, flexibility, and support of Python.
 
+## Resource
+- [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python)
+
 [Back](../../README.md)
