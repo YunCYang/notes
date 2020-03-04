@@ -1,6 +1,7 @@
 # Notes
 
 ## Frontend
+- [Events](programming/frontend/events.md)
 
 ### JavaScript
 - [Async](programming/frontend/javascript/async.md)
