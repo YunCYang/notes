@@ -35,6 +35,9 @@
 ## Machine Learning
 - [General](programming/machine_learning/general.md)
 
+## Mathematics
+- [General](mathematics/general.md)
+
 ## Web
 - [AWS](programming/web/aws.md)
 - [Networks](programming/web/networks.md)
