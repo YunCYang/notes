@@ -50,4 +50,7 @@ ______________
 
 When the statement above the line (*antecedents*) are proved, then we can consider the statement below the line (*conclusion* or consequent) to also be proved.
 
+## Resource
+- [Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
+
 [Back](../README.md)
