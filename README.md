@@ -32,8 +32,14 @@
 ## Object-Oriented Programming
 - [OOP](programming/oop/oop.md)
 
+## Libraries
+- [Phaser3](programming/libraries/phaser.md)
+
 ## Machine Learning
 - [General](programming/machine_learning/general.md)
+
+## Mathematics
+- [General](mathematics/general.md)
 
 ## Web
 - [AWS](programming/web/aws.md)
