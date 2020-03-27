@@ -9,6 +9,10 @@
 
 ### React
 
+### HTML
+- [Semantic Elements](programming/frontend/html/semantic-elements.md)
+- [Website Structure](programming/frontend/html/website-structure.md)
+
 ### CSS
 - [CSS](programming/frontend/css/css.md)
 
@@ -36,7 +40,7 @@
 - [Phaser3](programming/libraries/phaser.md)
 
 ## Machine Learning
-- [General](programming/machine_learning/general.md)
+- [General](programming/machine-learning/general.md)
 
 ## Mathematics
 - [General](mathematics/general.md)
