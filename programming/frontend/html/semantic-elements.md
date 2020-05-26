@@ -1,20 +1,18 @@
-# HTML
+# Text Semantic Elements
 
-## Text Semantic Elements
-
-### Emphasis
+## Emphasis
 
 `<em>...</em>`
 
 To add emphasis in spoken language, stress certain words, subtly altering the meaning of what we are saying. Similarly, in written language when we stress words by putting them in italics.
 
-### Strong Importance
+## Strong Importance
 
 `<strong>...</strong>`
 
 To emphasize important words, stress them in spoken language and bold them in written language.
 
-### Others
+## Others
 
 - `<i>`:  is used to convey a meaning traditionally conveyed by italic: Foreign words, taxonomic designation, technical terms, a thought...
 - `<b>`: is used to convey a meaning traditionally conveyed by bold: Key words, product names, lead sentence...

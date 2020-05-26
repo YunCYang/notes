@@ -1,8 +1,6 @@
-# HTML
+# Website Structure
 
-## Website Structure
-
-### Semantic Wrappers
+## Semantic Wrappers
 
 - `<main>` is for content unique to this page. Use `<main>` only once per page, and put it directly inside `<body>`. Ideally this shouldn't be nested within other elements.
 - `<article>` encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post).
@@ -12,19 +10,19 @@
 - `<nav>` contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
 - `<footer>` represents a group of end content for a page.
 
-### Non-semantic Wrappers
+## Non-semantic Wrappers
 
 - `<span>`
 - `<div>`
 
-### Line Breaks and Horizontal Rules
+## Line Breaks and Horizontal Rules
 
 - `<br>`: line breaks.
 - `<hr>`: create a horizontal rule in the document that denotes a thematic change in the text (such as a change in topic or scene). Visually it just looks like a horizontal line.
 
 Both doesn't require closing tags.
 
-### Preserve Formatting
+## Preserve Formatting
 
 If you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag `<pre>`.
 
@@ -38,7 +36,7 @@ If you want your text to follow the exact format of how it is written in the HTM
 
 Function will keep the format instead of compressing into 1 line.
 
-### Nonbreaking Spaces
+## Nonbreaking Spaces
 
 If you do not want the client browser to break text, you should use a nonbreaking space entity `&nbsp;` instead of a normal space.
 
