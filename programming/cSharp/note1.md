@@ -16,6 +16,10 @@ Console.WriteLine("Hello " + aFriend);
 
 Add a `$` before the opening quote of the string, put variables in between curly braces {}.
 
+#### Replacement message
+Similar to string interpolation.
+`Console.WriteLine("Hello {0}", aFriend);`
+
 ### `string` properties - `Length`
 Console.WriteLine($"The name {aFriend} has {aFriend.Length} letters.");
 
@@ -45,6 +49,13 @@ Console.WriteLine(songLyrics.EndsWith("You"));
 ```
 
 Returns a bollean value `true` or `false`.
+
+## Console
+`Console.WriteLine("...");` - outputs to console with a newline in the end.
+`Console.Write();` - outputs to console, stays in the same line.
+`Console.ReadLine();` - gets input from user, can also be used to pause the program.
+
+`string userValue = Console.ReadLine();` - example of saving user input.
 
 ## Number
 ### Integer
@@ -104,6 +115,8 @@ else
     Console.WriteLine("Or the first number is not equal to the second");
 }
 ```
+
+`string message = (userValue == "1") ? "boat" : "strand of lint";`
 
 Equality symbol here is `==`.
 
