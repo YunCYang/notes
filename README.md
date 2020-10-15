@@ -52,6 +52,7 @@
 
 ## C#
 - [note1](programming/cSharp/note1.md)
+- [note2](programming/cSharp/note2.md)
 
 ## Others
 - [Regex](programming/others/regex.md)

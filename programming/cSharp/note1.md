@@ -50,10 +50,14 @@ Console.WriteLine(songLyrics.EndsWith("You"));
 
 Returns a bollean value `true` or `false`.
 
+### `ToString()`
+`variableName.ToString();` - converts variable type to string.
+
 ## Console
 `Console.WriteLine("...");` - outputs to console with a newline in the end.
 `Console.Write();` - outputs to console, stays in the same line.
 `Console.ReadLine();` - gets input from user, can also be used to pause the program.
+`Console.Clear();` - clears the screen.
 
 `string userValue = Console.ReadLine();` - example of saving user input.
 
@@ -97,6 +101,15 @@ Double-precision floating point number. Double precision number have twice the n
 `decimal a = 1.0M;`
 
 `M` suffix is needed when declaring a `decimal` type with actual number.
+
+### Others
+`int.Parse();` - similar to `parseInt()` in JavaScript.
+
+```
+Random myRandom = new Random();
+int randomNumber = myRandom.Next(1, 11);
+```
+Creates a random number with a minimum of 1 and a maximum of 10.
 
 ## Branches and loops
 ### `if` statement
@@ -151,6 +164,13 @@ for (for initializer; for condition; for iterator) {}
 
 ### `foreach` loop
 Check `list`.
+
+### do-while loop
+```
+do {
+...
+} while ()
+```
 
 ## `list`
 ```
