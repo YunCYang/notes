@@ -23,7 +23,7 @@ Similar to string interpolation.
 ### `string` properties - `Length`
 Console.WriteLine($"The name {aFriend} has {aFriend.Length} letters.");
 
-### `string` methods - `Trim`, `TrimStart`, `TrimEnd`, `Replace`, `ToUpper`, `ToLower`
+### `string` methods - `Trim`, `TrimStart`, `TrimEnd`, `Replace`, `ToUpper`, `ToLower`, `Substring`
 ```
 string greeting = "      Hello World!       ";
 string alteredGreeting = greeting.TrimStart();
@@ -36,6 +36,8 @@ alteredGreeting = greeting.Replace("Hello", "Greetings");
 
 alteredGreeting = greeting.ToUpper();
 alteredGreeting = greeting.ToLower();
+
+alteredGreeting = greeting.Substring(2, 4); // grab 4 chars after position 2
 ```
 
 ### Search strings - `Contains`, `StartsWoth`, `EndsWith`
@@ -52,6 +54,26 @@ Returns a bollean value `true` or `false`.
 
 ### `ToString()`
 `variableName.ToString();` - converts variable type to string.
+
+### Backslash '\'
+Backslash is used to escape characters. `"\""`
+To show backslash, either escape it `"\\"`, or add a '@' in front of the string `@"..\.."`.
+
+### `String.Format()`
+`string myString = String.Format("{0} and {1}", "first", "second");`
+Latter texts are insert into the template. {0} and {1} (and so on) can be reused or switched.
+
+Format the data: e.g. display as currency `String.Format("{0:C}", 123.45);`.
+Custom format: `String.Format("Phone number: {0: (###) ###-####}", 1234567890);`
+
+`String.Format()` and `string.Format()` ?
+
+### `StringBuilder`
+Strings are immutable, when "altering" a string, you are actually creating a new string and discarding the old one, which might causes performance issue. Use `StringBuilder` in this case.
+
+`StringBuilder myString = new StringBuilder();`
+
+Check for `StringBuilder` methods.
 
 ## Console
 `Console.WriteLine("...");` - outputs to console with a newline in the end.
