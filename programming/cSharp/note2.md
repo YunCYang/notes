@@ -55,3 +55,35 @@ Find time span:
 TimeSpan age = DateTime.Now.Subtract(myBirthday);
 Console.WriteLine(age.TotalDays);
 ```
+
+## Class
+Declare the class (or blueprint):
+```
+class Car
+{
+  public string Make { get; set; }
+  public string Model { get; set; }
+  public int Year { get; set; }
+
+  public decimal DeterineMarketValue ()
+  {
+    decimal carValu;
+
+    if (Year > 1990) // access properties inside the class
+      carValue = 10000;
+    else
+      carValue = 2000;
+
+    return carValue;
+  }
+}
+```
+
+Create an object based on the class:
+```
+Car myCar = new Car();
+myCar.Make = "ABC";
+...
+```
+
+`public` methods allow you to call it outside of the class, while `private` method doesn't.
