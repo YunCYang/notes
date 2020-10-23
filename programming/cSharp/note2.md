@@ -87,3 +87,54 @@ myCar.Make = "ABC";
 ```
 
 `public` methods allow you to call it outside of the class, while `private` method doesn't.
+
+Class is a reference type, same handle will point to the same data.
+```
+Car myCar = new Car();
+Car myOtherCar;
+myOtherCar = myCar;
+```
+
+Changing `myCar.Make` will also changes `myOtherCar.Make`.
+
+### Constructor
+```
+class Car
+{
+  public string Make { get; set; }
+  public string Model { get; set; }
+
+  // the constructor inside the class
+  // you could load from a configuration file, a database, etc.
+  public Car()
+  {
+    Make = "Toyota";
+  }
+
+  // overload constructor
+  public Car(string make, string model)
+  {
+    Make = make;
+    Model = model;
+  }
+}
+
+Car myCar = new Car(); // Car() <- indicates calling the constructor function
+```
+
+### `static`
+The keyword `static` means that you do not have to create an instance of that class in order to utilize the method.
+
+`static` can be used on classes or methods.
+
+```
+class Car
+{
+  public static void MyMethod()
+  {
+    ...
+  }
+}
+
+Car.MyMethod(); // calling MyMethod does not require you to create an instance of Car.
+```
