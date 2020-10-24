@@ -138,3 +138,13 @@ class Car
 
 Car.MyMethod(); // calling MyMethod does not require you to create an instance of Car.
 ```
+
+## Assembly
+
+Add reference to assemblies:
+- Solution Explorer -> References, right click and choose "add reference".
+- Use NuGet for external libraries.
+- Add reference for libraries created by yourself:
+  1. Create new project, choose "Class Library" as the template.
+  2. Use previous method, browse and find the file.
+- To make it easier to get custom library, select "solution" as the template and create library inside. Need to select start up project on one of the file.
