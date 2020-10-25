@@ -85,6 +85,8 @@ Car myCar = new Car();
 myCar.Make = "ABC";
 ...
 ```
+or Object initializer syntax
+`Car myCar = new Car() {Make = "BMW", Model = "750li"};`
 
 `public` methods allow you to call it outside of the class, while `private` method doesn't.
 
@@ -148,3 +150,39 @@ Add reference to assemblies:
   1. Create new project, choose "Class Library" as the template.
   2. Use previous method, browse and find the file.
 - To make it easier to get custom library, select "solution" as the template and create library inside. Need to select start up project on one of the file.
+
+## Collection
+### ArrayList (old)
+ArrayLists are dynamically sized, with features like sorting and removing items
+The issue is you can add different data types into an ArrayList at the same time, not strongly typed.
+```
+ArrayList myArrayList = new ArrayList();
+myArrayList.Add(car1);
+```
+
+### List<T>
+```
+List<Car> myList = new List<Car>();
+myList.Add(car1);
+foreach (Car car in myList)
+{
+  Console.WriteLine(car.Model);
+}
+```
+
+Collection initializer:
+```
+List<Car> myList = new List<Car>() {
+  new Car {Make = "...", Model = "..."},
+  new Car {Make = "...", Model = "..."}
+};
+```
+
+### Dictionary<TKey, TValue>
+```
+Dictionary<string, Car> myDictionary = new Dictionary<string, Car>();
+
+myDictionary.Add(car1.VIN, car1);
+
+Console.WriteLine(myDictionary["car1VIN"].Make);
+```
