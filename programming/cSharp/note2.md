@@ -186,3 +186,68 @@ myDictionary.Add(car1.VIN, car1);
 
 Console.WriteLine(myDictionary["car1VIN"].Make);
 ```
+
+## LINQ
+Language Integrated Query
+
+exaple:
+```
+List<Car> myCars = new List<Car>() {
+  new Car() { VIN = "...", Make = "BMW", ... },
+  new Car() {...}
+}
+```
+
+### LINQ query syntax
+Search:
+```
+var bmws = from car in myCars
+           where car.Make == "BMW"
+           && car.Year == 2010
+           select car;
+```
+```
+var newCars = from car in myCars
+              where car.Make == "BMW"
+              && car.Year == 2010
+              select new { car.Make, car.Model };
+```
+
+Order:
+```
+var orderedCars = from car in myCars
+                  orderby car.Year descending
+                  select car;
+```
+
+### LINQ method
+Search:
+`var bmws = myCars.Where(p => p.Make == "BMW" && p.Year == 2010);`
+
+Order:
+`var orderedCars = myCars.OrderByDescending(p => p.Year);`
+
+Find first:
+`var firstBMW = myCars.First(p => p.Make == "BMW");`
+
+Find first chain with order by year:
+`var firstBMW = myCars.OrderByDescending(p => p.Year).First(p => p.Make == "BMW");`
+
+Boolean check, returns boolean
+`var newCar = myCars.TrueForAll(p => p.Year > 2012);`
+`var hasCar = myCars.Exists(p => p.Model == "745li");`
+
+Method to print out the result:
+```
+foreach (var car in bmws)
+{
+  Console.WriteLine("{0} {1}", car.Model, car.VIN);
+}
+```
+or
+`myCars.ForEach(p => Console.WriteLine("{0} {1:C}", p.Model, p.Price));`
+
+## `GetType()`
+Use `GetType()` to find the type of the object. `myCars.GetType()`
+
+[Back](../../README.md)
