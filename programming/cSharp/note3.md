@@ -50,8 +50,8 @@ finally
 
 Use it when you are dealing with things that are out of your control, e.g. reading files, user input.
 
-## using
-Use the `using ...` to avoid typing the whole library name every time.
+## namespace and using
+Use the `using ...` to avoid typing the whole namespace every time.
 `System.Timers.Timer myTimer = new Timer(2000);`
 is the same as
 ```
@@ -61,6 +61,8 @@ using System.Timers;
 
 Timer myTimer = new Timer(2000);
 ```
+
+use Ctrl + '.' to add namespace to using statement on libraries without references.
 
 ## Event
 ### Timer
