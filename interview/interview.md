@@ -25,8 +25,21 @@
   Note: functional programming has mostly won over class inheritance in JavaScript.
 
 - Closure
+  A closure is a function inside another function, that is returned or passed to another function. It is a  combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
+  The inner function has access to the outer function’s scope.
+
+  Use:
+    - Data privacy: the enclosed variables are only in scope within the containing (outer) function.
+    - Partial application: fixes (partially applies the function to) one or more arguments inside the returned function, and the returned function takes the remaining parameters as arguments in order to complete the function application.
 
 - Promise
+  An object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved.
+
+  3 possible states:
+    - Fulfilled
+    - Rejected
+    - Pending
 
 - Asynchronous programming
   - Synchronous programming
