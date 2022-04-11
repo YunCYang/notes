@@ -1,4 +1,4 @@
-# AWS
+# Server
 
 ## EC2
 
@@ -7,16 +7,18 @@ IPv4 Public IP: 18.144.81.193
 Download and keep the security key-pair document safe.
 
 ### Use Git Bash
+
 For Linux or macOS, do `chmod 600 ~/[key-pair file location]` to change the safety mode.
 
 run `ssh -i ~/Desktop/ec2-ssh.pem ubuntu@18.144.81.193`
 `~/...` is the file location of the key-pair file
 `ubuntu@18.144.81.193` ubuntu is the user name, or the type of service you launched.
-  18.144.81.193 is the IPv4 Public IP.
+18.144.81.193 is the IPv4 Public IP.
 
 ```
 The authenticity of host '18.144.81.193 (18.144.81.193)' can't be established.
 ```
+
 Run `yes` if this is the first time running the machine.
 
 `sudo apt update` raise user to root in order to install tools. Update lists of available packages on the virtual machine. `apt` is a package manager.
@@ -39,10 +41,10 @@ proxy - prebuilt webserver for public, so public doesn't have to connect to node
 use `top` to check which service is running. `q` to exit.
 
 ### Elastic IP
+
 Get a stable public IP address for the public. One free for all.
 Elastic IP address: `184.169.194.166`
 Associate the address with the instance.
-
 
 ### Log
 
@@ -57,9 +59,10 @@ Use nano to edit the file
 `sudo nano /etc/nginx/sites-available/yuncyang.com`
 
 Inside nano:
-  - Change root: `root /home/ubuntu/yuncyang.com;`
-  - Change server name to domain name `server_name yuncyang.com;`
-  - ctrl O, enter to save, ctrl X to exit nano
+
+- Change root: `root /home/ubuntu/yuncyang.com;`
+- Change server name to domain name `server_name yuncyang.com;`
+- ctrl O, enter to save, ctrl X to exit nano
 
 Remove the default config file in sites-enabled (not sites-available!)
 `sudo rm /etc/nginx/sites-enabled/default`

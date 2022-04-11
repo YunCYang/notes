@@ -5,6 +5,9 @@
 
 Console: represents the console window.
 
+Can also store as the Unicode value:
+"ABCDE" is the same as "\x0041BCDE"
+
 ### With `string` variable
 ```
 string aFriend = "Yun";
@@ -112,10 +115,31 @@ Console.WriteLine($"An example of overflow: {what}");
 Use `MaxValue` and `MinValue` to find the limits.
 If a calculation produces a value that exceeds those limits, you have an underflow or overflow condition. `max + 3` = `min + 2`.
 
+
+### Integer types and range
+
+- sbyte: 8 bits, -128 to 127
+- byte: 8 bits, 0 to 255
+- short: 16 bits, -32,768 to 32,767
+- ushort: 16 bits, 0 to 65,535
+- int: 32 bits, -2,147,483,648 to 2,147,483,647
+- uint: 32 bits, 0 to 4,294,967,295
+- long: 64 bits, -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+- ulong: 64 bits, 0 to 18,446,744,073,709,551,615
+- char: 16 bits, 0 to 65,535
+
+
 ### Double
 Double-precision floating point number. Double precision number have twice the number of binary digits as single-precision, which is declared using `float`. It is more common to use double precision than single precision numbers.
 
 `double a = 19;`
+`double b = 9.46E15;`
+
+float has a range of 1.5E-45 to 3.4E48 with a precision of only 7 digits.
+double has a range of 5.0E-324 to 1.7E308 and a precision of 15 digits.
+decimal has a precision to 28-29 digits, but takes twice the storage space of a double.
+
+(to store a float, add an f after the value: 2.5f)
 
 ### Decimal
 `decimal` type has a smaller range but greater precision than `double`.
@@ -251,5 +275,17 @@ while (fibonacciNumbers.Count < 20)
 foreach(var item in fibonacciNumbers)
     Console.WriteLine(item);
 ```
+
+
+## Boolean
+
+Use `bool` for booleans.
+
+
+## Expressions
+
+Expressions are consists of operands and operators.
+- Operands: the values
+- Operators: +, -, etc.
 
 [Back](../../README.md)
